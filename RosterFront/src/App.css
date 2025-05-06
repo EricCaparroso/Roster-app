@@ -1,0 +1,474 @@
+:root {
+  --primary-color:  #113489; /* Color oscuro para un toque profesional */
+  --secondary-color:  #446ac8;/* Color para resaltar elementos secundarios */
+  --background-color: #f8f9fa; /* Fondo claro y limpio */
+  --button-bg:  #113489; /* Color de botones primarios */
+  --button-bg-danger: #ffffff; /* Color de botones de peligro */
+  --table-bg: #ffffff; /* Fondo de tablas */
+  --table-header-bg:  #113489; /* Color de fondo de encabezado de tabla */
+  --text-color: #212529; /* Color de texto principal */
+  --muted-text-color: #6c757d; /* Color de texto secundario */
+  --border-color: #dee2e6; /* Color de bordes */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+* {
+  opacity: 0; /* Invisible al inicio */
+  animation: fadeInGlobal 0.5s ease-in-out forwards; /* Efecto de fundido */
+}
+
+/* Definición de animación global */
+@keyframes fadeInGlobal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }}
+body {
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--button-bg);
+}
+
+header {
+  padding: 20px 30px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid var(--border-color);
+}
+
+section {
+  margin-top: 30px;
+}
+input{
+  min-width: 200px;
+}
+select{
+  min-width: 200px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0;
+  padding: 1.5rem;
+  text-align: center;
+ color:  #113489;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.title-img{
+max-width: 150px;
+min-height: 80px;
+margin-right: 70%;
+}
+
+.subtitle {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+
+  flex-direction: row;
+  padding-left: 1rem;
+  font-size: 1.1rem;
+  color: var(--muted-text-color);
+  padding: 2%;
+}
+.subtitle-btn{
+  padding: 1% ;
+  background-color: #113489;
+  color: white;
+  border-radius: 10px;
+}
+.subtitle-btn:hover{
+  padding: 1% ;
+  background-color: #0f40bc;
+  color: white;
+  border-radius: 10px;
+}
+.subtitle-search{
+  margin-left: 2%;
+  width: 80%;
+  border-radius: 10px;
+  border: 0.5px;
+  padding: 1%;
+}
+.icon-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;  /* Tamaño del ícono */
+  height: 40px;
+  background-color: #113489;  /* Fondo negro */
+  color: white;  /* Color del ícono */
+  border-radius: 50%;  /* Hace que el ícono sea un círculo */
+  cursor: pointer;  /* Cambia el cursor al pasar por encima */
+  transition: background 0.3s ease, transform 0.2s ease;  /* Suaviza el efecto */
+  border: none;
+  margin-left: 2%;
+}
+
+.icon-search:hover {
+  background-color: #333333;  /* Oscurece un poco al pasar el mouse */
+  transform: scale(1.1);  /* Hace el ícono ligeramente más grande */
+}
+
+.icon-search:active {
+  transform: scale(0.95);  /* Efecto de "clic" */
+}
+
+
+.row {
+  display: flex;
+  background-color: var(--table-bg);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.col {
+  flex: 1;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  line-height: 1.5;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  max-width: 100px;
+  min-width: 100px
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--button-bg);
+  border-color: var(--button-bg);
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  color: white;
+}
+.btn-succes{
+  margin-top: 5%;
+  background-color: #113489;
+  color: white;
+}
+.btn-succes:hover{
+  background-color: #0f40bc;
+  color: white;
+}
+
+.btn-danger {
+  margin-top: 5%;
+  color: #000000;
+  background-color: var(--button-bg-danger);
+  border-color: var(--button-bg-danger);
+  
+}
+
+.btn-danger:hover {
+
+  background-color: #ff0002;
+  color:white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+
+.mr-3 {
+  margin-right: 1.5rem;
+}
+
+.modal-content {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--primary-color);
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.modal-body {
+  padding: 20px;
+  font-size: 1.25rem;
+}
+
+.label-form {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: var(--muted-text-color);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+table {
+  width: 90%;
+  background-color: #ffffff; /* Fondo blanco para claridad */
+  color: #333; /* Texto en gris oscuro para buen contraste */
+  border-collapse: collapse;
+  border: 1px solid #ddd; /* Bordes suaves */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+table th,
+table td {
+  padding: 12px; /* Más espacio para mejor legibilidad */
+  text-align: center;
+  border: 1px solid #ddd;
+  
+}
+
+thead {
+  
+  background-color:#113489; /* Verde profesional */
+  color: #fff;
+  font-weight: bold; /* Resaltar cabeceras */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Color alterno más sutil */
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1; /* Efecto hover para interacción */
+  transition: background-color 0.3s ease-in-out; /* Animación suave */
+}
+
+caption {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #4caf50; /* Texto del caption acorde a la cabecera */
+}
+
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+}
+
+h2 {
+
+ font-size: 80%;
+ 
+}
+.logo-img{
+  margin-bottom: 100%;
+  max-width: 300px;
+ 
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ajusta el ancho del contenedor */
+  height: 500px; /* Ajusta la altura del contenedor según lo necesites */
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5),rgb(17, 52, 137)),url('https://media.v2.siweb.es/uploaded_thumb_big/aca7d795a5eda43ca94fa972557be9b7/img_20220722_wa0006.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+
+
+}
+
+.botones{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 2%;
+}
+.subtitle{
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+
+}
+.search{
+  height: 10px;
+  border: #113489;
+}
+.actions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+footer{
+  padding-top: 0.25%;
+  padding-bottom: 0.25%;
+  width: 100%;
+  background-color: black;
+  color: #5d5d5d;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-decoration: none;
+
+}
+.footer-icons{
+  display: flex;
+  flex-direction: row;
+text-decoration: none;
+width: 10%;
+justify-content: space-evenly;
+align-items: center;
+}
+.card-header{
+  display: flex;
+  margin-left: 5%;
+}
+
+.tick{
+  color: green;
+}
+.cross{
+
+ color: red;
+}
+.table-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center; /* Centrar contenido verticalmente */
+ /* Espaciado interno */
+  background: linear-gradient(to bottom, #ffffff, #113489); /* Degradado desde blanco puro a azul */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
+/* Borde con tono complementario */
+opacity: 0; /* Estado inicial invisible */
+animation: fadeIn 3s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Aplicar el efecto de fundido a las filas */
+tbody tr {
+  opacity: 0; /* Estado inicial invisible */
+  animation: fadeInRow 1s ease-in-out forwards; /* Animación de fundido */
+}
+
+/* Añadir retraso escalonado para cada fila */
+tbody tr:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+tbody tr:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+tbody tr:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+/* Ajustar los retrasos para más filas */
+tbody tr:nth-child(4) {
+  animation-delay: 0.7s;
+}
+
+/* Definición de la animación */
+@keyframes fadeInRow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.title-container{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
