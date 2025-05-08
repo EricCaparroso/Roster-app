@@ -68,6 +68,7 @@ Edit: Click "Editar" ➡️ Modify fields ➡️ Save
 Editar: Haz clic en "Editar" ➡️ Modifica campos ➡️ Guardar
 
 📸 Screenshots / Capturas
+
 Home Page - Top Section / Página Inicial - Parte Superior
 <img width="1440" alt="Captura de pantalla 2025-05-08 a las 19 03 17" src="https://github.com/user-attachments/assets/37434b06-5e23-419f-bb2a-742991193a20" />
 
