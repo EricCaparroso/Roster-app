@@ -7,10 +7,6 @@ Features
 
 Tech Stack
 
-Installation
-
-Usage
-
 Screenshots
 
 API Documentation
