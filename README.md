@@ -78,7 +78,7 @@ New Employee Form / Formulario Nuevo Empleado
 
 
 Employee Details / Detalles de Empleado
-<img width="1440" alt="Captura de pantalla 2025-05-08 a las 19 05 44" src="https://github.com/user-attachments/assets/8443653e-b7fb-472c-aba0-a8df418fd18b" />
+
 
 
 Edit Employee / Editar Empleado
