@@ -91,11 +91,17 @@ Edit Employee / Editar Empleado
 
 📡 API Documentation / Documentación de la API
 Method	Endpoint	Description
+
 GET	/api/v1/employees	Get all employees
+
 GET	api/v1/employee/{id}	Get employee by ID
+
 GET	/api/v1/employees/by-name	Search employees by name
+
 POST	/api/v1/employees	Create new employee
+
 PUT	/api/v1/employees/{id}	Update employee
+
 DELETE	/api/v1/employee/{id}	Delete employee
 
 
